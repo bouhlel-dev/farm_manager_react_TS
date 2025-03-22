@@ -33,3 +33,9 @@ export type Field = {
   cols: number;
   cells: GridCell[];
 };
+
+// Add a new type for storing all fields
+export type FieldsState = {
+  fields: Field[];
+  currentField: Field | null;
+};

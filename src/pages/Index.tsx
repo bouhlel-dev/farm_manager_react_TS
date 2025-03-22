@@ -1,18 +1,13 @@
 
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Field } from "@/types";
-import { createField } from "@/utils/fieldUtils";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import CreateFieldForm from "@/components/CreateFieldForm";
-import FieldGrid from "@/components/FieldGrid";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 const Index = () => {
-  const [field, setField] = useState<Field | null>(null);
-
-  const handleFieldCreation = (name: string, rows: number, cols: number) => {
-    const newField = createField(name, rows, cols);
-    setField(newField);
-  };
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background p-4 md:p-8">
@@ -22,33 +17,30 @@ const Index = () => {
       </header>
 
       <main className="max-w-5xl mx-auto">
-        {!field ? (
-          <Card className="max-w-md mx-auto">
-            <CardHeader>
-              <CardTitle>Create New Field</CardTitle>
-              <CardDescription>
-                Define your field dimensions to get started
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <CreateFieldForm onFieldCreated={handleFieldCreation} />
-            </CardContent>
-          </Card>
-        ) : (
-          <div className="space-y-6">
-            <div className="flex justify-between items-center">
-              <h2 className="text-2xl font-bold">Field Management</h2>
-              <button
-                onClick={() => setField(null)}
-                className="text-sm text-primary hover:text-primary/80"
-              >
-                Create New Field
-              </button>
-            </div>
-            
-            <FieldGrid field={field} onFieldUpdate={setField} />
-          </div>
-        )}
+        <Card className="max-w-md mx-auto">
+          <CardHeader>
+            <CardTitle>Welcome to Farm Field Manager</CardTitle>
+            <CardDescription>
+              An easy way to manage your farm fields and trees
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-4">
+            <p>This application helps you:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Create virtual representations of your fields</li>
+              <li>Plant different types of trees in your fields</li>
+              <li>Track the history of each tree (planting, pruning, harvesting)</li>
+              <li>Manage multiple fields in one place</li>
+            </ul>
+            <Button 
+              onClick={() => navigate("/fields")} 
+              className="w-full mt-4"
+            >
+              Get Started
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </CardContent>
+        </Card>
       </main>
 
       <footer className="max-w-5xl mx-auto mt-12 text-center text-sm text-muted-foreground">
