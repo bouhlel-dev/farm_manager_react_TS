@@ -1,5 +1,3 @@
-# Welcome to your Lovable project
-
 # 🎯Farm Field Management App
 
 ## Introduction
