@@ -1,69 +1,37 @@
 # Welcome to your Lovable project
 
-## Project info
+# 🎯Farm Field Management App
 
-**URL**: https://lovable.dev/projects/c75929c9-2503-4524-9182-3db1864cf7f9
+## Introduction
+The **Farm Field Management App** is a simple web-based tool designed to help farmers manage their fields efficiently. It allows users to create fields sectioned like a chessboard, add trees to each section, and maintain a history of each tree's growth and maintenance.
 
-## How can I edit this code?
+## ✨ Features
+- **Create a New Field**: Define field dimensions by specifying the number of trees horizontally and vertically.
+- **Chessboard-style Grid**: Visual representation of the field with interactive sections.
+- **Add Trees**: Select a section, specify the tree type, and save it.
+- **Manage Tree History**: Maintain logs for planting date, growth status, pruning, and harvest details.
 
-There are several ways of editing your application.
 
-**Use Lovable**
+## Usage
+1. Navigate to the homepage.
+2. Enter field dimensions to generate the grid.
+3. Click on a section to add a tree and specify its type.
+4. View and update tree history records.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c75929c9-2503-4524-9182-3db1864cf7f9) and start prompting.
+## Future Enhancements
+- User authentication for personalized field management.
+- Data export options (CSV, PDF).
+- Visual indicators for tree health and growth stages.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📷 Demo  
+![Image](https://github.com/user-attachments/assets/c86ad701-cfa7-469b-89bc-cece254962d8)
+![Image](https://github.com/user-attachments/assets/ad4c1a9f-8204-41c8-af0c-3cd6e81f902e)
+![Image](https://github.com/user-attachments/assets/558d9ad8-4ae2-4f2a-aa54-4c7114346319)
+![Image](https://github.com/user-attachments/assets/51c4462f-388e-4995-a82c-e1b3d84f3741)
+![Image](https://github.com/user-attachments/assets/5a63c790-97a6-4cdf-9993-212bfb9e1127)
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
+**Farm Field Management App - Simplifying Farm Tracking & Tree Management** 🌱
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c75929c9-2503-4524-9182-3db1864cf7f9) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
